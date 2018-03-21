@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="suite">
-  <listeners>
-   		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
-   </listeners>
-  
-  
-  <test name="test">
+<suite name="Suite">
+
+  <test thread-count="5" name="Test">
     <classes>
       <class name="com.crm.qa.testcases.LoginPageTest"/>
     </classes>
-  </test>
-</suite>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
