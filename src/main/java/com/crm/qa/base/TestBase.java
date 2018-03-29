@@ -57,7 +57,7 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+		driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
 		//driver.get("https://www.freecrm.com/");
 	}
