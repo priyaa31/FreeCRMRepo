@@ -24,9 +24,10 @@ public class ContactsPage extends TestBase
 		}
 		
 		
-		public void selectContactsByName(){
+		public void selectContactsByName(String name)
+		{
 			//driver.findElement(By.xpath("//a[text()='"+name+"']//parent::td[@class='datalistrow']"
 			//		+ "//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']")).click();
-			driver.findElement(By.xpath("//a[contains(text(),'A5 A6')]/parent::td//preceding-sibling::td//input[@name='contact_id']")).click();
+			driver.findElement(By.xpath("//a[contains(text(),'+name+')]/parent::td//preceding-sibling::td//input[@name='contact_id']")).click();
 		}
 }
